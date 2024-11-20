@@ -1,4 +1,4 @@
-# Lab Dyna
+# Criando projeto dynatrace
 
 Este repositório contém um projeto para criar um ambiente de monitoramento utilizando o Dynatrace. O objetivo é praticar a configuração de ambientes com Terraform e Docker, além de desenvolver um dashboard customizado com React e TypeScript.
 
@@ -39,8 +39,7 @@ Criação de um dashboard interativo com React para visualização de métricas 
 
 
 
-📞 Contato
-Se tiver alguma dúvida ou sugestão, entre em contato:
+
 
 ## 📞 Contato
 Se tiver alguma dúvida ou sugestão, entre em contato:
