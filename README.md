@@ -42,5 +42,5 @@ Criação de um dashboard interativo com React para visualização de métricas 
 📞 Contato
 Se tiver alguma dúvida ou sugestão, entre em contato:
 
-Email: tbarcelar@email.com
-LinkedIn: tbarcelar-linkedin
+Email: tbarcelar@gmail.com
+LinkedIn: tatiana-barcelar
