@@ -1,8 +1,5 @@
 <h1>
-    <a href="https://developer.dynatrace.com/">
-     <img align="center" width="40px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Dynatrace_Logo.svg/512px-Dynatrace_Logo.svg.png">
-    </a>
-    <span> Dynatrace App Configuration Guide</span>
+Dynatrace App Configuration Guide</span>
 </h1>
 
 ## Preparando o Ambiente Dynatrace no WSL
