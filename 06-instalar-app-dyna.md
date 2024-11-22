@@ -1,5 +1,5 @@
 <h1>
-Dynatrace App Configuration Guide</span>
+Instalar Dynatrace App </span>
 </h1>
 
 ## Preparando o Ambiente Dynatrace no WSL

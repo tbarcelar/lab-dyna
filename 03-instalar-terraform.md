@@ -1,5 +1,5 @@
 <h1>
-Instalação do Dynatrace OneAgent com Terraform
+Instalação Terraform
 </h1>
 
 ## 🛠️ Passo a passo
