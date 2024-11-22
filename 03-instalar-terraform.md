@@ -1,35 +1,63 @@
-# Instalação do Dynatrace OneAgent com Terraform
-Este guia descreve como instalar o Dynatrace OneAgent usando Terraform em um ambiente Ubuntu.
+<h1>
+Instalação do Dynatrace OneAgent com Terraform
+</h1>
 
+## 🛠️ Passo a passo
 
-🛠️ Passo a passo
+### 1️⃣ Atualizar pacotes do sistema
 
-1. Atualize os pacotes do sistema:
-sudo apt update && sudo apt upgrade -y
+- Atualize os pacotes do sistema:
+    ```bash
+    sudo apt update && sudo apt upgrade -y
+    ```
 
+##
 
-2. Instale os pacotes necessários:
-sudo apt install -y software-properties-common gnupg
+### 2️⃣ Instalar pacotes necessários
 
-3. Adicione a chave GPG do repositório oficial do Terraform:
-curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+- Instale os pacotes requisitados:
+    ```bash
+    sudo apt install -y software-properties-common gnupg
+    ```
 
-4. Adicione o repositório oficial do Terraform à lista de fontes do APT:
-echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+##
 
+### 3️⃣ Adicionar a chave GPG do repositório oficial do Terraform
 
------------------------ Instalar o Terraform -------------------------
+- Configure a chave GPG do repositório oficial do Terraform:
+    ```bash
+    curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+    ```
 
-1. Atualize novamente a lista de pacotes:
-sudo apt update
+##
 
+### 4️⃣ Adicionar o repositório oficial do Terraform à lista de fontes
 
-2. Instale o Terraform:
-sudo apt install -y terraform
+- Adicione o repositório ao APT:
+    ```bash
+    echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
+    ```
 
-3. Verifique se o Terraform foi instalado corretamente
-terraform --version
+##
 
+### 5️⃣ Instalar o Terraform
 
+- Atualize a lista de pacotes:
+    ```bash
+    sudo apt update
+    ```
 
+- Instale o Terraform:
+    ```bash
+    sudo apt install -y terraform
+    ```
+
+##
+
+### 6️⃣ Verificar a instalação do Terraform
+
+- Confirme a instalação verificando a versão:
+    ```bash
+    terraform --version
+    ```
 

@@ -1,30 +1,43 @@
-# Instalação do Easytravel através do docker
-Este guia descreve como ter um ambiente completo com banco, applicação etc, para se concentrar somente no dynatrace. 
+<h1>
+Instalação do Easytravel através do Docker
+</h1>
 
+## 🛠️ Passo a passo
 
-🛠️ Passo a passo
+### 1️⃣ Clonar o ambiente Easytravel
 
-$ Clonar o ambiente
-sudo git clone https://github.com/Dynatrace/easyTravel-Docker
+- Clone o repositório do Easytravel usando o comando:
+    ```bash
+    sudo git clone https://github.com/Dynatrace/easyTravel-Docker
+    ```
 
+##
 
-$ Entra no diretorio criado do clone e inicia o ambiente
-docker-compose up
+### 2️⃣ Iniciar o ambiente Docker
 
+- Acesse o diretório criado pelo clone e inicie o ambiente:
+    ```bash
+    cd easyTravel-Docker
+    docker-compose up
+    ```
 
-$ Frontend
-http://localhost:54428/
+##
 
+### 3️⃣ Acessar os serviços do Easytravel
 
-$ Frontend angular
-http://localhost:54429/easytravel/home
+- Frontend:
+    - [http://localhost:54428/](http://localhost:54428/)
+- Frontend Angular:
+    - [http://localhost:54429/easytravel/home](http://localhost:54429/easytravel/home)
+- Backend:
+    - [http://localhost:8091/](http://localhost:8091/)
 
+##
 
-$ backend
-http://localhost:8091/
+### 4️⃣ Parar o ambiente Docker
 
-
-
-$ Parar o compose
-docker-compose stop
+- Para parar o ambiente, execute:
+    ```bash
+    docker-compose stop
+    ```
 
