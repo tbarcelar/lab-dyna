@@ -9,14 +9,27 @@ Este guia descreve como instalar o Dynatrace OneAgent usando Terraform em um amb
 1. Crie um arquivo de configuração Terraform chamado dynatrace_oneagent.tf com o conteúdo abaixo:
 
 
-provider "dynatrace" {
-  url = "https://<your-dynatrace-environment>.live.dynatrace.com"
-  api_token = "<your-api-token>"
+provider "local" {}
+
+resource "local_file" "dynatrace_install_script" {
+  content = <<EOF
+  #!/bin/bash
+  wget -O Dynatrace-OneAgent.sh "https://{id}.live.dynatrace.com/api/v1/deployment/installer/agent/unix/default/latest?arch=x86" --header="Authorization: Api-Token {token}}"
+  sudo /bin/bash Dynatrace-OneAgent.sh --set-app-log-content-access=true --set-host-name=wsl
+  EOF
+
+  filename = "${path.module}/dynatrace_install.sh"
+  file_permission = "0777"  # Permissão para execução
 }
 
-resource "dynatrace_oneagent" "example" {
-  environment_id = "<your-environment-id>"
+resource "null_resource" "install_oneagent" {
+  depends_on = [local_file.dynatrace_install_script]
+
+  provisioner "local-exec" {
+    command = "bash ${path.module}/dynatrace_install.sh"
+  }
 }
+
 
 
 
