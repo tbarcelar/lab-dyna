@@ -101,6 +101,9 @@ Criar Dashboard no Dynatrace
       );
     };
     ```
+##
+
+##
 
 ## Passo 2: Atualizar o Arquivo `App.tsx`
 
@@ -155,6 +158,8 @@ Criar Dashboard no Dynatrace
       }
     }
     ```
+
+##
 
 ##
 
@@ -295,6 +300,8 @@ Criar Dashboard no Dynatrace
 
 ##
 
+##
+
 ### Exemplo de Home
 
 - Crie ou atualize o arquivo `src/app/pages/Home.tsx` com o seguinte conteúdo:
@@ -365,6 +372,8 @@ Criar Dashboard no Dynatrace
       );
     };
     ```
+
+##
 
 ##
 
