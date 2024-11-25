@@ -221,7 +221,7 @@ Criar Dashboard no Dynatrace
     };
     
     const environmentUrl = "https://rok25300.apps.dynatrace.com"; // URL do seu ambiente Dynatrace
-    const token = "dt0c01.O55A36M3G6DF7X7JVFBWNN32.DMOXLTHDS4DRJH6YIMRI5PWHA2QOMX2GGUTFL6NUAQS5FWWV7HJC42XVTWRSS3E3"; // Substitua pelo seu token de API
+    const token = "dt0001.xxxxx"; // Substitua pelo seu token de API
     
     export const Card = ({ href, inAppLink, imgSrc, name }: CardProps) => {
       const [cpuUsage, setCpuUsage] = useState<string>("Carregando...");
