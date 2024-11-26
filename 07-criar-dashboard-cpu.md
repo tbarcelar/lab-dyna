@@ -220,8 +220,13 @@ Criar Dashboard no Dynatrace
       inAppLink?: boolean;
     };
     
+<<<<<<< HEAD
     const environmentUrl = "https://xxxx.apps.dynatrace.com"; // URL do seu ambiente Dynatrace
     const token = "dtxxxxxx"; // Substitua pelo seu token de API
+=======
+    const environmentUrl = "https://rok25300.apps.dynatrace.com"; // URL do seu ambiente Dynatrace
+    const token = "dt0001.xxxxx"; // Substitua pelo seu token de API
+>>>>>>> c6b69e4d53be47e3f2af90492d077cca056f7ff5
     
     export const Card = ({ href, inAppLink, imgSrc, name }: CardProps) => {
       const [cpuUsage, setCpuUsage] = useState<string>("Carregando...");
